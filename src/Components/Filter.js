@@ -19,7 +19,7 @@ export default function Filter() {
               type="range"
               min="50"
               max="200"
-              value="150"
+              defaultValue="150"
               className="slider"
               id="myRange"
             />
@@ -48,7 +48,7 @@ export default function Filter() {
           <ul>
             {rating.map((rating, index) => {
               return (
-                <li>
+                <li key={index}>
                   <input
                     type="radio"
                     name="rating"
